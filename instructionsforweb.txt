@@ -1,3 +1,3 @@
 For loading the web representation of the puzzles, you don't have to do anything but run the
-main python script, "proj2.py". The script will generate and load the HTML files into your
+main python script, "solver.py". The script will generate and load the HTML files into your
 web browser. Running this script may take up to about 10 minutes to generate, in my experience.
