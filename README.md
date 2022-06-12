@@ -1,2 +1,2 @@
 # SudokuSolver
-Representing a Sudoku board as a constraint satisfaction problem (CSP), this is a program that solves a given board and creates an html output of the steps taken
+Representing a Sudoku board as a constraint satisfaction problem (CSP), this is a program that takes in a given sudoku board, represented by a 2D array, and solves it using a backtracing search. The solution is represented by a set of 2-tuples, the first part representing the space in which we are assigning a value to, the second part representing the value we are assigning to said space. At runtime, HTML files are generated based on these set solutions, and each HTML file provides a visual aid to help users visualize the order of assignments.
