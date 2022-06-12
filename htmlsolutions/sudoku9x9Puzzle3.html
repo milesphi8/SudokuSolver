@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Some Sudoku Puzzles</title>
+<style>
+table {border: 3px solid black;border-collapse: collapse;}
+tr {padding: 0;}
+td {width: 64px;height: 64px;padding: 0;border: 1px solid gray;text-align: center;vertical-align: center;font-size: 1.5em;}tr.box-bottom td {border-bottom: 3px solid black;}td.box-side {border-right: 3px solid black;}</style></head><h1>9x9Puzzle3 puzzle in HTML</h1> <h2>Initial Puzzle</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side"></td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side"></td><td>9</td><td></td><td class="box-side"></td><td>8</td><td></td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td></td><td>6</td><td class="box-side"></td><td>1</td><td></td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td></td><td class="box-side">2</td><td></td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>7</td><td class="box-side">5</td><td></td><td></td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>3</td><td class="box-side"></td><td>6</td><td></td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side"></td><td></td><td></td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td></td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side"></td><td></td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 1</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side"></td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side"></td><td>9</td><td></td><td class="box-side"></td><td>8</td><td></td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td></td><td>6</td><td class="box-side"></td><td>1</td><td></td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td></td><td class="box-side">2</td><td></td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>7</td><td class="box-side">5</td><td></td><td></td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>3</td><td class="box-side"></td><td>6</td><td></td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side"></td><td></td><td></td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td></td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side"></td><td></td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 2</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side"></td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side"></td><td>9</td><td></td><td class="box-side"></td><td>8</td><td></td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td></td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td></td><td class="box-side">2</td><td></td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>7</td><td class="box-side">5</td><td></td><td></td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>3</td><td class="box-side"></td><td>6</td><td></td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side"></td><td></td><td></td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td></td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side"></td><td></td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 3</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side"></td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side"></td><td>9</td><td></td><td class="box-side"></td><td>8</td><td></td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td></td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td></td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>7</td><td class="box-side">5</td><td></td><td></td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>3</td><td class="box-side"></td><td>6</td><td></td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side"></td><td></td><td></td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td></td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side"></td><td></td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 4</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side"></td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side"></td><td>9</td><td></td><td class="box-side"></td><td>8</td><td></td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td></td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td></td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td></td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>3</td><td class="box-side"></td><td>6</td><td></td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side"></td><td></td><td></td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td></td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side"></td><td></td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 5</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side"></td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side"></td><td>9</td><td></td><td class="box-side"></td><td>8</td><td></td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td></td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td></td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td></td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>3</td><td class="box-side"></td><td>6</td><td></td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side"></td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td></td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side"></td><td></td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 6</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side"></td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side"></td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td></td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td></td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td></td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>3</td><td class="box-side"></td><td>6</td><td></td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side"></td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td></td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side"></td><td></td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 7</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side"></td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side"></td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td></td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td></td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td></td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>3</td><td class="box-side"></td><td>6</td><td></td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side"></td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td></td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td></td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 8</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side"></td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side"></td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td></td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td></td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td></td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>3</td><td class="box-side"></td><td>6</td><td></td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side"></td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td></td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 9</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side"></td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side"></td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td></td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td></td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td></td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side"></td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td></td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 10</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side"></td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td></td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td></td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td></td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side"></td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td></td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 11</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side"></td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td></td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td></td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side"></td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td></td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 12</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side"></td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td></td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side"></td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td></td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 13</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side"></td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td></td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">3</td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td></td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 14</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side">6</td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td></td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">3</td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td></td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 15</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side">6</td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td></td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">3</td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 16</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side">6</td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td></td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">3</td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 17</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side">6</td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">3</td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 18</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side">6</td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">3</td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 19</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side">6</td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side"></td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 20</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side">6</td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td></td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 21</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side">6</td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td></td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 22</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side"></td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side">6</td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 23</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td></td><td class="box-side">6</td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 24</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td></td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 25</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td></td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 26</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side"></td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 27</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side"></td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 28</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side"></td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 29</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td></td><td class="box-side">2</td>
+</tr></table><h2>Step 30</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side"></td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table><h2>Step 31</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side">9</td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td></td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table><h2>Step 32</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side">9</td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td></td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td>9</td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table><h2>Step 33</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side">9</td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side"></td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td>2</td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td>9</td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table><h2>Step 34</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side">9</td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side">8</td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td></td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td>2</td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td>9</td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table><h2>Step 35</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side">9</td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side">8</td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td>4</td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td></td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td>2</td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td>9</td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table><h2>Step 36</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side">9</td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td></td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side">8</td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td>4</td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td>7</td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td>2</td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td>9</td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table><h2>Step 37</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td></td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side">9</td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td>6</td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side">8</td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td>4</td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td>7</td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td>2</td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td>9</td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table><h2>Step 38</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td>6</td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side">9</td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td>6</td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side">8</td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td>4</td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td>7</td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td>2</td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td></td><td>9</td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table><h2>Step 39</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td>6</td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td></td><td class="box-side">9</td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td>6</td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side">8</td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td>4</td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td>7</td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td>2</td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td>3</td><td>9</td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table><h2>Step 40</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td>6</td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td>8</td><td class="box-side">9</td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td>6</td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side">8</td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td>4</td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side"></td><td>6</td><td>1</td><td class="box-side">9</td><td>7</td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td>2</td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td>3</td><td>9</td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table><h2>Step 41</h2>
+<table>
+
+<tr>
+<td>1</td><td></td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td>6</td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td>8</td><td class="box-side">9</td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td>6</td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side">8</td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td>4</td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side">2</td><td>6</td><td>1</td><td class="box-side">9</td><td>7</td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td>2</td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td>3</td><td>9</td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table><h2>Step 42</h2>
+<table>
+
+<tr>
+<td>1</td><td>2</td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td>6</td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td>8</td><td class="box-side">9</td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td>6</td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side">8</td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td>4</td><td>3</td><td class="box-side"></td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side">2</td><td>6</td><td>1</td><td class="box-side">9</td><td>7</td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td>2</td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td>3</td><td>9</td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table><h2>Step 43</h2>
+<table>
+
+<tr>
+<td>1</td><td>2</td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td>6</td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td>8</td><td class="box-side">9</td><td>3</td><td>6</td><td class="box-side"></td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td>6</td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side">8</td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td>4</td><td>3</td><td class="box-side">8</td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side">2</td><td>6</td><td>1</td><td class="box-side">9</td><td>7</td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td>2</td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td>3</td><td>9</td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table><h2>Step 44</h2>
+<table>
+
+<tr>
+<td>1</td><td>2</td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td>6</td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td></td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td>8</td><td class="box-side">9</td><td>3</td><td>6</td><td class="box-side">5</td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td>6</td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side">8</td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td>4</td><td>3</td><td class="box-side">8</td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side">2</td><td>6</td><td>1</td><td class="box-side">9</td><td>7</td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td>2</td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td>3</td><td>9</td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table><h2>Step 45</h2>
+<table>
+
+<tr>
+<td>1</td><td>2</td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td>6</td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td>2</td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td>8</td><td class="box-side">9</td><td>3</td><td>6</td><td class="box-side">5</td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td>6</td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side">8</td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td>4</td><td>3</td><td class="box-side">8</td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side">2</td><td>6</td><td>1</td><td class="box-side">9</td><td>7</td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td>2</td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td></td><td>8</td><td class="box-side">6</td><td>3</td><td>9</td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table><h2>Step 46</h2>
+<table>
+
+<tr>
+<td>1</td><td>2</td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td>6</td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td>2</td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td>8</td><td class="box-side">9</td><td>3</td><td>6</td><td class="box-side">5</td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td>6</td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side">8</td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td>4</td><td>3</td><td class="box-side">8</td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side">2</td><td>6</td><td>1</td><td class="box-side">9</td><td>7</td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td>2</td><td></td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td>2</td><td>8</td><td class="box-side">6</td><td>3</td><td>9</td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table><h2>Step 47</h2>
+<table>
+
+<tr>
+<td>1</td><td>2</td><td class="box-side">3</td><td>8</td><td>4</td><td class="box-side">7</td><td>6</td><td>5</td><td class="box-side">9</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td class="box-side">6</td><td>9</td><td>2</td><td class="box-side">1</td><td>8</td><td>7</td><td class="box-side">3</td>
+</tr>
+<tr class="box-bottom">
+<td>7</td><td>8</td><td class="box-side">9</td><td>3</td><td>6</td><td class="box-side">5</td><td>1</td><td>2</td><td class="box-side">4</td>
+</tr>
+<tr>
+<td>6</td><td>1</td><td class="box-side">4</td><td>5</td><td>7</td><td class="box-side">2</td><td>9</td><td>3</td><td class="box-side">8</td>
+</tr>
+<tr>
+<td>9</td><td>7</td><td class="box-side">5</td><td>4</td><td>3</td><td class="box-side">8</td><td>2</td><td>6</td><td class="box-side">1</td>
+</tr>
+<tr class="box-bottom">
+<td>8</td><td>3</td><td class="box-side">2</td><td>6</td><td>1</td><td class="box-side">9</td><td>7</td><td>4</td><td class="box-side">5</td>
+</tr>
+<tr>
+<td>2</td><td>9</td><td class="box-side">7</td><td>1</td><td>5</td><td class="box-side">3</td><td>4</td><td>8</td><td class="box-side">6</td>
+</tr>
+<tr>
+<td>4</td><td>5</td><td class="box-side">1</td><td>2</td><td>8</td><td class="box-side">6</td><td>3</td><td>9</td><td class="box-side">7</td>
+</tr>
+<tr class="box-bottom">
+<td>3</td><td>6</td><td class="box-side">8</td><td>7</td><td>9</td><td class="box-side">4</td><td>5</td><td>1</td><td class="box-side">2</td>
+</tr></table>
